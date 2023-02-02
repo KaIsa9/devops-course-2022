@@ -1,4 +1,5 @@
-#Jenkins part 1
+# Alliedium DevOps course 2022
+##Jenkins part 1
 Prerequisites.
 
 1. Linux (Manjaro)
@@ -16,4 +17,11 @@ Prerequisites.
 3. Navigate to http://localhost:8090. Find the default password in '''sudo cat /var/lib/jenkins/secrets/initialAdminPassword'''
 4. Create admin user
 5. Install suggested plugins
-6. 
+ 
+## Linux ubuntu
+1. Clone project ansible-jenkins
+2. Initiate submodules with ansible roles: 'git submodule init'
+3. Run ansible playbook ansible ansible-playbook playbooks/install0jenkins-plugins.yml -i ./inventory
+4. Check that Jenkins is available al http://localhost:8090/ Your credentials are admin/admin 
+
+## Add project to the Jenkins
